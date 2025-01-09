@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: linear-gradient(120deg,aqua,rgb(157, 19, 255));
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.clock-container{
+   width: 50%;
+   height: 100vh;
+    background-color: transparent;
+    /* padding: 2em; */
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* justify-content: center; */
+    align-items: center;
+    /* border-right: 2px solid black; */
+}
+.clock-container h1{
+    font-size: 3em;
+}
+.timer{
+    border-radius: 8px;
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    box-shadow: 0px 0px 15px 1px rgb(94, 91, 91);
+}
+.timer span{
+    font-size: 3em;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+/* -----------------stopwatch css --------------------- */
+
+.stopwatch{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 10%;
+    gap: 3em;
+}
+.stopwatch h1{
+    font-size: 3em;
+}
+.stopwatch-timer{
+    border-radius: 8px;
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    box-shadow: 0px 0px 15px 1px rgb(94, 91, 91); 
+}
+.stopwatch-timer span{
+    font-size: 3em;
+    font-weight: 600;
+}
+.button-container{
+    width: 50%;
+    height: 20vh;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 15px;
+
+}
+button{
+    font-size: 1.2em;
+    font-weight: 600;
+    width: 32.5%;
+    height: 40%;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(120deg,red,rgb(81, 0, 255));
+}
+
+
+
+
+
+
+
+@media(max-width:1206px){
+    .container{
+        flex-direction: column;
+        justify-content: start;
+       
+    }
+    .clock-container{
+        padding-top: 2em;
+        width: 100%;
+        height: 40vh;
+        /* background: #fe1818; */
+      
+    }
+    .stopwatch{
+        padding-top: 1em;
+   width: 100%;
+   height: 60vh;
+   /* background: #5f3434; */
+    }
+    button{
+        font-size: 1.7em;
+    }
+}
+
+@media(max-width:886px){
+   .button-container{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+   }
+   button{
+    width: 50%;
+    height: 10vh;
+    gap: 10px;
+   }
+  
+}
+
+@media(max-width:600px){
+.stopwatch{
+    gap: 10px;
+}
+    .timer{
+        width: 90%;
+        padding: 5px;
+    }
+    .timer span{
+        font-size: 14vw;
+    }
+   .stopwatch-timer{
+    width: 90%;
+    height: 60vh;
+    padding: 5px;
+   }
+   .stopwatch-timer span{
+    font-size: 14vw;
+   }
+   button{
+    width: 90%;
+    height: 10vh;
+   }
+ 
